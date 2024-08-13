@@ -1,0 +1,24 @@
+<div>
+  <h1>Atividade 1 - Playlist</h1>
+  <form (submit)="addMusica()">
+    <input type="text" [(ngModel)]="musica" name="musica" placeholder="musica">
+    <input type="text" [(ngModel)]="artista" name="artista" placeholder="artista">
+    <button type="submit">Adicionar</button>
+    <p *ngIf="status">{{ status }}</p>
+  </form>
+  <button type="button" (click)="listarPlaylist()">Listar playlist</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Música</th>
+        <th>Artista</th>
+      </tr>
+    </thead>
+    <tbody id="playlist-table-body">
+      <tr *ngFor="let musica of playlist">
+        <td>{{ musica.musica }}</td>
+        <td>{{ musica.artista }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

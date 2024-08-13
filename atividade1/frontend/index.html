@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1 - Playlist</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>Atividade 1 - Playlist</h1>
+  <form id="add-song-form">
+    <input type="text" name="musica" placeholder="musica">
+    <input type="text" name="artista" placeholder="artista">
+    <button type="submit">Adicionar</button>
+    <p id="add-song-form-status"></p>
+  </form>
+  <button type="button" id="listar-playlist">Listar playlist</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Música</th>
+        <th>Artista</th>
+      </tr>
+    </thead>
+    <tbody id="playlist-table-body">
+
+    </tbody>
+  </table>
+  <script src="./index.js"></script>
+</body>
+
+</html>
