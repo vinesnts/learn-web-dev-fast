@@ -11,7 +11,7 @@ export class AppService {
   constructor(private http: HttpClient) {}
 
   get() {
-    return this.http.get(`${apiUrl}/playlist`);
+    return this.http.get<Musica[]>(`${apiUrl}/playlist`);
   }
 
   post(obj: Musica) {

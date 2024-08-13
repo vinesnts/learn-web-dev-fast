@@ -1,4 +1,4 @@
-# Web Dev Learn Fast
+# Learn Web Dev Fast
 
 ## Lista de atividades
 

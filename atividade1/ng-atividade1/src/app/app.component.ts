@@ -18,13 +18,12 @@ export class AppComponent {
   playlist: Musica[] = [];
 
   status: string = '';
-  showStatus: boolean = false;
 
   constructor(private appService: AppService) {}
   listarPlaylist() {
     this.appService.get().subscribe({
       next: (res) => {
-        this.playlist = res as Musica[];
+        this.playlist = res;
       },
     });
   }
