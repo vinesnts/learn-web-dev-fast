@@ -18,4 +18,4 @@
 
 - `git push origin <nome-da-branch>`: Sobe a branch, com todos os commits feitos para uma branch de mesmo nome na `remote`\*.
 
-\* `remote` é como chamamos o repositório no Github/Gitlab, etc. O `remote` também tem um nome, que por padrão é `origin`, por isso você faz `git push **origin\*\* <nome-da-branch>`.
+\* `remote` é como chamamos o repositório no Github/Gitlab, etc. O `remote` também tem um nome, que por padrão é `origin`, por isso você faz `git push **origin** <nome-da-branch>`.
