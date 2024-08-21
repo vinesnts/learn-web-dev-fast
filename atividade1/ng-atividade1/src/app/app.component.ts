@@ -19,11 +19,16 @@ export class AppComponent {
 
   status: string = '';
 
-  constructor(private appService: AppService) {}
+  appService = inject(AppService);
+  constructor() {}
+
   listarPlaylist() {
     this.appService.get().subscribe({
       next: (res) => {
         this.playlist = res;
+      },
+      error: (error) => {
+        console.log('Error', error.status);
       },
     });
   }

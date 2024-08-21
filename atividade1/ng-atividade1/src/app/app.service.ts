@@ -8,7 +8,9 @@ const apiUrl = 'http://localhost:5000';
   providedIn: 'root',
 })
 export class AppService {
-  constructor(private http: HttpClient) {}
+  http = inject(HttpClient);
+
+  constructor() {}
 
   get() {
     return this.http.get<Musica[]>(`${apiUrl}/playlist`);
